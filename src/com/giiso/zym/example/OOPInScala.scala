@@ -36,8 +36,18 @@ class Person(val name : String, val age : Int){
       this( name, age)
       this.gender = gender
     }
+    
+    val University = "Csu"
 }
 
+
+class Student(name: String, age: Int, val major : String) extends Person (name,age){
+  println("this is the subclass of Person, major is: " + major);
+  
+  override def toString = "Overrided toString method..."
+  override val University = "Tsinghua"
+  
+}
 
 
 object OOPInScala
@@ -47,7 +57,12 @@ object OOPInScala
     // val p = new Person
     // p.name = "Yingmin"
     // println(p.name+" : " + p.age + " : " + p.gender);
-    val p = new Person("Yingmin",22,"female")
-    println(p.name+" : " + p.gender);
+    // val p = new Person("Yingmin",22,"female")
+    //println(p.name+" : " + p.gender);
+    val s = new Student("Yingmin",22,"Computer Science");
+    
+    println(s.toString)
+    println(s.University)
+    
   }
 }
