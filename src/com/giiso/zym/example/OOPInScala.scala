@@ -60,7 +60,6 @@ object OOPInScala
     // val p = new Person("Yingmin",22,"female")
     //println(p.name+" : " + p.gender);
     val s = new Student("Yingmin",22,"Computer Science");
-    
     println(s.toString)
     println(s.University)
     
